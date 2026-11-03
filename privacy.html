@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endstop Privacy Policy</title>
+<style>
+  :root { --bg: #E4E3DF; --ink: #111111; --ink2: #4A4944; --card: #F4F3EF; --accent: #FF5A1F; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0E0E0E; --ink: #F4F3EF; --ink2: #A9A8A2; --card: #1A1A1A; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 0 0 6px; letter-spacing: .01em; }
+  h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin: 32px 0 8px; }
+  h2::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 10px; vertical-align: 2px; }
+  p, li { color: var(--ink2); }
+  strong { color: var(--ink); }
+  .meta { font: 13px/1.4 ui-monospace, Menlo, monospace; color: var(--ink2); letter-spacing: .04em; }
+  .card { background: var(--card); border-radius: 14px; padding: 16px 18px; margin-top: 18px; }
+  code { font: 14px ui-monospace, Menlo, monospace; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Endstop Privacy Policy</h1>
+<p class="meta">EFFECTIVE 3 NOVEMBER 2026 · APP: ENDSTOP FOR ANDROID</p>
+
+<div class="card">
+<p><strong>In short:</strong> Endstop runs on your phone. It has no accounts, no ads and no analytics. What's on your screen is checked in memory and never stored or sent anywhere. The only thing it downloads is a signed file of detection rules, and that request contains nothing about you.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Endstop is made by Dotbug. Questions about this policy: <a href="mailto:hamidovazizbek20@gmail.com">hamidovazizbek20@gmail.com</a>.</p>
+
+<h2>How Endstop uses Accessibility</h2>
+<p>To block short videos, Endstop uses Android's <strong>Accessibility Service</strong> permission. You turn it on yourself, after an in-app explanation that asks for your agreement.</p>
+<ul>
+<li><strong>What it reads:</strong> the on-screen structure (element IDs and labels) of only the apps you selected, currently YouTube and Instagram. It doesn't look at any other app.</li>
+<li><strong>Why:</strong> to recognize when a short-video feed like Shorts or Reels is open, and then go back or show a pause screen, following the rules you set. These actions are fixed rules, not automated decisions.</li>
+<li><strong>What it does not do:</strong> it doesn't collect, store or share what's on your screen, including your messages. Screen information is checked in memory on your phone and immediately discarded.</li>
+</ul>
+
+<h2>What is saved, and where</h2>
+<p>Only usage totals, like minutes spent in Shorts and how many times they were blocked. This stays on your phone, in the app's private storage. Specifically:</p>
+<ul>
+<li>sessions: which feed (for example "YouTube Shorts"), when it started and ended, how long it was open, and an approximate number of videos swiped;</li>
+<li>interventions: when a block, pause or limit happened, and which kind;</li>
+<li>times when the accessibility service was turned off;</li>
+<li>your settings: limits, schedules, strict mode, notification choices.</li>
+</ul>
+<p>None of this leaves your phone. Endstop doesn't use cloud backup for it.</p>
+
+<h2>Rule updates (the only network request)</h2>
+<p>Endstop downloads updated detection rules so it keeps working when apps change. Nothing about you or your screen is sent.</p>
+<p>At most once a day, and when you tap "Check now", the app downloads two static files from <code>khamidov11.github.io</code> (GitHub Pages): the rules and their digital signature. The request has no identifiers, cookies or parameters. Like any website, the host (GitHub) can see your IP address; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Files without a valid signature are ignored. You can turn rule updates off in Settings.</p>
+
+<h2>What Endstop never does</h2>
+<ul>
+<li>No account, sign-in or personal profile.</li>
+<li>No advertising, analytics, tracking or crash-reporting software.</li>
+<li>No selling or sharing of data, because no data is collected.</li>
+<li>No access to your messages, contacts, photos, location, microphone or camera.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+<li><strong>Accessibility Service:</strong> to detect short-video feeds, as described above.</li>
+<li><strong>Notifications:</strong> a heads-up before a daily limit, and an alert if protection turns off. Optional.</li>
+<li><strong>Internet:</strong> only for the rule updates above.</li>
+<li><strong>Run at startup, keep awake briefly, check network state:</strong> used by Android's scheduler for the daily rule check and the "protection is off" check.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Settings → Delete history removes every session, block count and "protection off" record. Uninstalling Endstop removes everything it stored.</p>
+
+<h2>Children</h2>
+<p>Endstop isn't directed at children under 13 and collects no personal information from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version appears here with a new effective date. If what Endstop reads or sends ever changes, the app asks for your agreement again before it continues.</p>
+</main>
+</body>
+</html>
