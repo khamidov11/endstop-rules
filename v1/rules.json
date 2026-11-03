@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "rulesVersion": 2,
+  "surfaces": [
+    {
+      "id": "YOUTUBE_SHORTS",
+      "packages": [
+        "com.google.android.youtube"
+      ],
+      "match": {
+        "anyOf": [
+          {
+            "viewIdVisible": "com.google.android.youtube:id/reel_recycler"
+          },
+          {
+            "viewIdVisible": "com.google.android.youtube:id/reel_player_page_container"
+          }
+        ]
+      },
+      "itemSwipe": {
+        "scrollSourceViewId": "com.google.android.youtube:id/reel_recycler"
+      }
+    },
+    {
+      "id": "INSTAGRAM_REELS",
+      "packages": [
+        "com.instagram.android"
+      ],
+      "match": {
+        "anyOf": [
+          {
+            "viewIdVisible": "com.instagram.android:id/clips_viewer_view_pager"
+          }
+        ]
+      },
+      "itemSwipe": {
+        "scrollSourceViewId": "com.instagram.android:id/clips_viewer_view_pager"
+      },
+      "friendEntry": {
+        "viewIdVisible": "com.instagram.android:id/direct_thread_container"
+      },
+      "notes": "friendEntry is UNVERIFIED: taken from a synthetic DM fixture (no real DM capture yet, by the user's choice 2026-11-03). Confirm the ID on a real thread before relying on it (CLAUDE.md hard rule 10)."
+    }
+  ]
+}
